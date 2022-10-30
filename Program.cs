@@ -22,6 +22,7 @@ namespace ExerciseDecorator
             Console.WriteLine("I need to pack:");
             RequiredEquipment.ForEach(x => Console.WriteLine(x));
             Console.WriteLine("Starting exercise");
+            Console.WriteLine("");
         }
     }
 
@@ -70,7 +71,7 @@ namespace ExerciseDecorator
     {
         public GolfEquipment(IExercise exercise) : base(exercise)
         {
-            exercise.AddEquipment("golf clubs");
+            exercise.AddEquipment("golf club");
             exercise.AddEquipment("balls");
         }
 
